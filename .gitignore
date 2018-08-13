@@ -1,48 +1,16 @@
-### Yii Console command
-/yii
-/yii_test
-/yii_test.bat
-
 ### PHPStorm project files
 .idea
-
-### Netbeans project files
-nbproject
-
-### Zend Studio for eclipse project files
-.buildpath
-.project
-.settings
 
 ### Windows thumbnail cache
 Thumbs.db
 
-### Composer vendor dir
-/vendor
-
-### Composer itself is not needed
-composer.phar
-
 ### Mac DS_Store Files
 .DS_Store
-
-### Phpunit itself is not needed
-phpunit.phar
-/phpunit.xml
-
-### Vagrant runtime
-/.vagrant
 
 ### NPM modules, NPM debug log
 node_modules
 npm-debug.log
 
-### Xdebug
-xdebug.ini
-
 ### Dumps
 dumps/*
 !dumps/.gitkeep
-
-### Local test
-run_codeception_test.sh

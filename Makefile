@@ -6,7 +6,7 @@ build_image:
 	docker build -t angular-cli-python:2.0 .
 
 up:
-	docker run -d -v $$(pwd)/:/app --name angular_md_front_app angular-cli-python:2.0 sh -c "cd /app && npm install && ng serve --host 0.0.0.0"
+	docker run -d -v $$(pwd)/:/app --name angular_md_front_app angular-cli-python:2.0 sh -c "cd /app && npm install && ng serve --host 0.0.0.0 --disable-host-check"
 
 start:
 	docker start angular_md_front_app
@@ -22,4 +22,8 @@ set_host:
 
 
 single:
-	docker run rm -v$(PWD)/:/app --name angular_md_front_app_single angular-cli-python:2.0 sh -c "cd /app && npm install && ng serve --host 0.0.0.0" \
+	docker run --rm -v$(PWD)/:/app --name angular_md_front_app_single angular-cli-python:2.0 sh -c "cd /app && npm install && ng serve --host 0.0.0.0"
+
+
+init_new_bash:
+	docker run --rm -it -v$(PWD)/:/app --name angular_shitty angular-cli-python:2.0 sh
