@@ -1,0 +1,37 @@
+@import 'variables.sass'
+
+
+.main-header
+  border-bottom: 1px solid $lightGrey3
+
+  ul
+    display: inline-flex
+    margin-left: -5px
+    margin-right: -5px
+    li
+      padding: 0 5px
+      position: relative
+      & + li
+        margin-left: 20px
+        &:after
+          content: ''
+          display: inline-block
+          width: 10px
+          height: 2px
+          background-color: $black
+          position: absolute
+          top: 24px
+          left: -15px
+    a
+      text-decoration: none
+      color: $black
+      text-transform: uppercase
+      font-family: GothamProBlack
+      font-size: 12px
+      line-height: 50px
+      display: inline-block
+
+
+
+
+

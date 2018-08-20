@@ -25,6 +25,12 @@
             "styles": [
               "src/styles.css"
             ],
+            "stylePreprocessorOptions": {
+              "includePaths": [
+                "src/app/styles/base"
+              ]
+
+            },
             "scripts": []
           },
           "configurations": {
@@ -118,5 +124,10 @@
       }
     }
   },
-  "defaultProject": "apiAngular"
+  "defaultProject": "apiAngular",
+  "schematics": {
+    "@schematics/angular:component": {
+      "styleext": "sass"
+    }
+  }
 }

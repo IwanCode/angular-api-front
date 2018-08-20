@@ -1,1 +1,37 @@
 /* You can add global styles to this file, and also import other style files */
+@import url(~normalize.css);
+@font-face {
+  font-family: "GothamProBlack";
+  font-style: normal;
+  font-weight: 500;
+  src: url("assets/fonts/GothamPro/GothamProBlack/GothamProBlack.eot?") format("eot"), url("assets/fonts/GothamPro/GothamProBlack/GothamProBlack.ttf") format("truetype"), url("assets/fonts/GothamPro/GothamProBlack/GothamProBlack.woff") format("woff"); }
+@font-face {
+  font-family: "GothamProMedium";
+  font-style: normal;
+  font-weight: 500;
+  src: url("assets/fonts/GothamPro/GothamProMedium/GothamProMedium.eot?") format("eot"), url("assets/fonts/GothamPro/GothamProMedium/GothamProMedium.ttf") format("truetype"), url("assets/fonts/GothamPro/GothamProMedium/GothamProMedium.woff") format("woff"); }
+@font-face {
+  font-family: "GothamProRegular";
+  font-style: normal;
+  font-weight: 500;
+  src: url("assets/fonts/GothamPro/GothamProRegular/GothamProRegular.eot?") format("eot"), url("assets/fonts/GothamPro/GothamProRegular/GothamProRegular.ttf") format("truetype"), url("assets/fonts/GothamPro/GothamProRegular/GothamProRegular.woff") format("woff"); }
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none; }
+
+* {
+  box-sizing: border-box; }
+
+body {
+  font-family: GothamProRegular; }
+
+.container {
+  width: 100%;
+  max-width: 1920px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px; }
+
+/*# sourceMappingURL=styles.css.map */
