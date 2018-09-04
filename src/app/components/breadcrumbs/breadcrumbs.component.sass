@@ -1,0 +1,37 @@
+@import 'variables.sass'
+
+.section-menu
+  display: block
+.breadcrumb
+  display: block
+  font-size: 0
+  margin: 15px 0
+  background-color: transparent
+  li
+    position: relative
+    display: inline-block
+    padding-right: 27px
+    &:after
+      content: ''
+      position: absolute
+      display: inline-block
+      width: 10px
+      height: 13px
+      top: 50%
+      margin-top: -7px
+      right: 7px
+      background-image: url("../../common/images/brcrumbs-arrow.svg")
+
+    &:last-child
+      &:after
+        content: none
+  a
+    font-weight: normal
+    line-height: 18px
+    font-family: GothamProRegular, sans-serif
+    text-transform: none
+    text-decoration: none
+    font-size: 12px
+    color: $black
+    cursor: pointer
+

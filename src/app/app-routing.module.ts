@@ -1,7 +1,8 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { MainPageComponent } from './main-page/main-page.component';
-import { CatalogueComponent } from './catalogue/catalogue.component';
+import { MainPageComponent } from './pages/main-page/main-page.component';
+import { CatalogueComponent } from './pages/catalogue/catalogue.component';
+import { DiscountNewsComponent } from './pages/discount-news/discount-news.component';
 import { NotFoundComponent } from './static/not-found/not-found.component';
 
 const routes: Routes = [
@@ -13,6 +14,14 @@ const routes: Routes = [
   {
     path: 'store',
     component: CatalogueComponent
+  },
+  {
+    path: 'sale',
+    component: CatalogueComponent
+  },
+  {
+    path: 'discount-news',
+    component: DiscountNewsComponent
   },
   {
     path: 'not-found',

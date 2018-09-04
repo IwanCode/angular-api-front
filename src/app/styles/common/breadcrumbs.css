@@ -1,0 +1,16 @@
+.section-menu {
+  display: block; }
+
+.breadcrumb {
+  display: block;
+  font-size: 0;
+  margin: 15px 0;
+  background-color: transparent; }
+  .breadcrumb li {
+    position: relative;
+    display: inline-block;
+    padding-right: 27px; }
+  .breadcrumb a {
+    font-weight: normal; }
+
+/*# sourceMappingURL=breadcrumbs.css.map */

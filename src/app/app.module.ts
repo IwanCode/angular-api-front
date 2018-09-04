@@ -4,11 +4,15 @@ import { environment } from '../environments/environment';
 import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
-import { HeaderComponent } from './header/header.component';
-import { MainPageComponent } from './main-page/main-page.component';
-import { CatalogueComponent } from './catalogue/catalogue.component';
+import { HeaderComponent } from './components/header/header.component';
+import { MainPageComponent } from './pages/main-page/main-page.component';
+import { CatalogueComponent } from './pages/catalogue/catalogue.component';
 import { AppRoutingModule } from './app-routing.module';
 import { NotFoundComponent } from './static/not-found/not-found.component';
+// Import library
+import { OwlModule } from 'ngx-owl-carousel';
+import { DiscountNewsComponent } from './pages/discount-news/discount-news.component';
+import { BreadcrumbsComponent } from './components/breadcrumbs/breadcrumbs.component';
 
 @NgModule({
   declarations: [
@@ -16,12 +20,15 @@ import { NotFoundComponent } from './static/not-found/not-found.component';
     HeaderComponent,
     MainPageComponent,
     CatalogueComponent,
-    NotFoundComponent
+    NotFoundComponent,
+    DiscountNewsComponent,
+    BreadcrumbsComponent
   ],
   imports: [
     BrowserModule,
     HttpClientModule,
-    AppRoutingModule
+    AppRoutingModule,
+    OwlModule
   ],
   providers: [],
   bootstrap: [AppComponent]

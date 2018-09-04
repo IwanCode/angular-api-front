@@ -16,6 +16,7 @@ const httpOptions = {
 export class MainService {
   private baseUrl = environment.appUrl;
   private mainMenuUrl = 'v1/menu';  // URL to menu web api
+  private mediaBannersUrl = 'v1/banners';  // URL to menu web api
 
   /**
    * Handle Http operation that failed.
@@ -49,6 +50,15 @@ export class MainService {
     return this.http.get<Menu[]>(url)
         .pipe(
             tap(heroes => console.log(`fetch menu`))
+        );
+  }
+
+  getMedia(menuType: any): any {
+    const url = `${this.baseUrl}/${this.mediaBannersUrl}/${menuType}`;
+
+    return this.http.get(url)
+        .pipe(
+            tap(heroes => console.log(`get main banners`))
         );
   }
 

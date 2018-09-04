@@ -1,0 +1,21 @@
+<header class="main-header">
+  <div class="container">
+    <nav>
+      <ul>
+        <li *ngFor="let item of mainMenu">
+          <a href="javascript:;" routerLink="/{{item.id}}">{{item.Name}}</a>
+        </li>
+        <li>
+          <a href="javascript:;" routerLink="/store">Каталог</a>
+        </li>
+        <li>
+          <a href="javascript:;" routerLink="/sale">Sale</a>
+        </li>
+        <li>
+          <a href="javascript:;" routerLink="/discount-news">Акции</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+
+</header>

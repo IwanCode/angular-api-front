@@ -23,15 +23,21 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.sass",
+              "node_modules/owl.carousel/dist/assets/owl.carousel.css",
+              "node_modules/owl.carousel/dist/assets/owl.theme.default.css"
             ],
             "stylePreprocessorOptions": {
               "includePaths": [
-                "src/app/styles/base"
+                "src/app/styles/base",
+                "src/app/common"
               ]
 
             },
-            "scripts": []
+            "scripts": [
+              "node_modules/jquery/dist/jquery.js",
+              "node_modules/owl.carousel/dist/owl.carousel.js"
+            ]
           },
           "configurations": {
             "production": {

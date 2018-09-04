@@ -1,0 +1,29 @@
+<div class="main-page">
+  <div class="container">
+    <div class="banner-brands" *ngIf="images.length > 0">
+      <div class="main-banner">
+        <owl-carousel
+                class="main-banner-carousel"
+                [options]="{
+                items: 1,
+                dots: false,
+                navigation: true,
+                loop: true,
+                autoplay: true,
+                autoplayTimeout: 4000,
+                autoplaySpeed: 800,
+                autoWidth: true
+              }"
+                [items]="images"
+                [carouselClasses]="['owl-theme', 'row', 'sliding']">
+          <div class="item" *ngFor="let image of images;">
+            <a [href]="image.route" class="thumbnail-image">
+              <img [src]="image.imageUrl" alt="">
+            </a>
+          </div>
+        </owl-carousel>
+      </div>
+    </div>
+
+  </div>
+</div>
