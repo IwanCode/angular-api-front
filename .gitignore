@@ -14,3 +14,6 @@ npm-debug.log
 ### Dumps
 dumps/*
 !dumps/.gitkeep
+
+### host file
+hostConfig.js
