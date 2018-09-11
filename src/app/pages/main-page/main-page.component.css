@@ -1,0 +1,22 @@
+.main-banner-carousel {
+  width: 100%; }
+
+.thumbnail-image img {
+  height: auto; }
+
+.item {
+  width: calc(70vw - 40px);
+  display: inline-block; }
+
+.banner-brands {
+  width: 100%; }
+
+.main-banner {
+  width: 70%;
+  display: inline-block;
+  font-size: 0; }
+
+.main-page {
+  padding-top: 30px; }
+
+/*# sourceMappingURL=main-page.component.css.map */
