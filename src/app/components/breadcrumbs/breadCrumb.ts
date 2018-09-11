@@ -1,4 +1,9 @@
-export interface BreadCrumb {
+export class Breadcrumb {
     label: string;
-    url: string;
-};
+    href: string;
+
+    constructor(label: string, href: string) {
+        this.label = label;
+        this.href = href;
+    }
+}

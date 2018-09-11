@@ -1,6 +1,10 @@
 <div class="breadcrumb-container">
   <ul class="breadcrumb">
-    <li><a>Главная</a></li>
-    <li routerLink="/store"><a>Акции</a></li>
+    <li *ngFor="let breadcrumb of breadcrumbs"
+        class="breadcrumb-item">
+      <a [routerLink]="[breadcrumb.href]">
+        {{ breadcrumb.label }}
+      </a>
+    </li>
   </ul>
 </div>
